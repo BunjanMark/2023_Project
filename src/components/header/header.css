@@ -1,0 +1,10 @@
+.header {
+	height: 3500px;
+	background-color: rgb(241, 154, 154);
+}
+
+#logo {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}

@@ -1,0 +1,115 @@
+/* Googlefonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+	/* smoothes the scroll of the page */
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-white);
+	/* word / line height length */
+	line-height: 1.7;
+}
+
+:root {
+	--color-bg: #202020;
+	--color-bg-transparent: #323232cb;
+	--color-light-gray: #dedede;
+	--color-white: #ffffff;
+	--color-gray: #9d9d9d;
+	--color-dark-gray: #959595;
+
+	--container-width-lg: 75%;
+	--container-width-md: 86%;
+	--container-width-sm: 90%;
+	--transition: all 400ms ease;
+}
+
+/* removes the scroll bar of the website */
+::-webkit-scrollbar {
+	display: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	list-style-type: none;
+	list-style: none;
+	text-decoration: none;
+}
+
+.container {
+	width: var(--container-width-lg);
+
+	margin: 0 auto;
+}
+a {
+	color: var(--color-light-gray);
+	transition: var(--transition);
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: var(--color-white);
+}
+
+/* ============ GENERAL  STYLES  ============== */
+
+.btn {
+	/* max-content width -> btn fits exactly in its content size */
+	width: max-content;
+	display: inline-block;
+	color: var(--color-white);
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	border: 1px solid var(--color-primary);
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background-color: var(--color-white);
+	color: var(--color-bg);
+	/* border transparent */
+	border-color: transparent;
+}
+
+.btn-primary {
+	background: var(--color-primary-variant);
+	color: var(--color-bg);
+}
+
+/* each image size will not be zoomed. all part is covered */
+/* img {
+	display: block;
+	width: 100%;
+
+	object-fit: cover;
+} */
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+	.container {
+		/* for tablets */
+		width: var(--container-width-md);
+	}
+	section {
+		margin-top: 6rem;
+	}
+}
+
+/* =============== MEDIA QUERIES (Small DEVICES) ================ */
+
+@media screen and (max-width: 840px) {
+	.container {
+		/* for tablets */
+		width: var(--container-width-sm);
+	}
+	section > h2 {
+		margin-bottom: 2rem;
+	}
+}
