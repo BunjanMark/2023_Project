@@ -1,10 +1,35 @@
-.header {
-	height: 3500px;
-	background-color: rgb(241, 154, 154);
+.container.header {
+	display: flex;
+}
+.header section {
+	width: 50%;
+}
+#me {
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+}
+#me-section {
+	display: flex;
+
+	justify-content: center;
 }
 
-#logo {
-	height: 100px;
-	width: 100px;
-	background-color: red;
+#header {
+	width: 90%;
 }
+.header-text {
+	margin-top: 5rem;
+	width: 80%;
+}
+/* 
+
+3k - braces / PTA
+1.5k- nanay (adjust ra after pagpalit sa tambal janrey)
+2k - wifi
+1.5k - bugas
+2k - kurente
+==
+10k
+
+*/

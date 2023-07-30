@@ -1,0 +1,7 @@
+.img-div-1 {
+	display: inline-block;
+
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}

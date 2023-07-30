@@ -44,9 +44,9 @@ const Navbar = () => {
 				>
 					<span>
 						{clicked ? (
-							<FaTimes />
+							<FaTimes className="nav-icon" />
 						) : (
-							<FaBars />
+							<FaBars className="nav-icon" />
 						)}
 					</span>
 				</ul>

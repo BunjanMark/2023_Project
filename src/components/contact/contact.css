@@ -1,0 +1,10 @@
+.mail-icon {
+	font-size: 2rem;
+}
+.btn-primary.btn {
+	display: flex;
+	justify-content: center;
+
+	flex-wrap: wrap; /* Allow the content to wrap when needed */
+	align-items: center;
+}

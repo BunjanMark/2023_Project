@@ -8,6 +8,7 @@
 	position: sticky;
 	top: 0;
 }
+
 #nav {
 	height: 100px;
 	display: flex;
@@ -18,18 +19,23 @@
 #nav ul#logo-section {
 	display: flex;
 	flex-direction: row;
-	align-items: end;
+	align-items: flex-end;
 }
 #menu {
 	display: flex;
 	flex-direction: row;
-	gap: 20px;
+	gap: 3.5rem;
 }
 
 #mobile {
 	display: none;
 }
-@media screen and (max-width: 800px) {
+
+.nav-icon {
+	height: 30px;
+	width: 30px;
+}
+@media screen and (max-width: 840px) {
 	#menu {
 		display: flex;
 		flex-direction: column;
@@ -45,13 +51,15 @@
 		right: -90%;
 
 		border-bottom-left-radius: 8px;
+		background-color: #323232ee;
+
+		backdrop-filter: blur(2px);
 	}
 
 	#menu.active {
 		top: 100px;
-		right: 0%;
+		right: -35%;
 		margin: 0;
-		background-color: var(--color-bg-transparent);
 		display: flex;
 	}
 

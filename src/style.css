@@ -46,10 +46,13 @@ body {
 	width: var(--container-width-lg);
 
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 a {
 	color: var(--color-light-gray);
-	transition: var(--transition);
+	transition: 0.3s ease-in-out;
 	text-transform: uppercase;
 }
 
@@ -57,18 +60,44 @@ a:hover {
 	color: var(--color-white);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 2.5rem;
+	letter-spacing: 0.015rem;
+	line-height: 2.9rem;
+}
+section {
+	margin-top: 4.6rem;
+}
+
+.text-gray {
+	color: var(--color-gray);
+}
+
 /* ============ GENERAL  STYLES  ============== */
 
 .btn {
 	/* max-content width -> btn fits exactly in its content size */
 	width: max-content;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: var(--color-white);
-	padding: 0.75rem 1.2rem;
+	padding: 1.25rem 0.75rem;
 	border-radius: 0.4rem;
 	cursor: pointer;
 	border: 1px solid var(--color-primary);
 	transition: var(--transition);
+	gap: 0.3rem;
+	margin-top: 1.9rem;
 }
 
 .btn:hover {
@@ -77,19 +106,21 @@ a:hover {
 	/* border transparent */
 	border-color: transparent;
 }
+.btn:focus {
+	background-color: black;
+}
 
 .btn-primary {
-	background: var(--color-primary-variant);
-	color: var(--color-bg);
+	background: var(--color-gray);
+	color: var(--color-white);
 }
 
 /* each image size will not be zoomed. all part is covered */
-/* img {
-	display: block;
-	width: 100%;
+img {
+	display: inline;
 
 	object-fit: cover;
-} */
+}
 
 /* responsive */
 @media screen and (max-width: 1024px) {
@@ -109,7 +140,46 @@ a:hover {
 		/* for tablets */
 		width: var(--container-width-sm);
 	}
+	/* Header section */
+	#me {
+		width: 100%;
+		height: auto;
+		border-radius: 100%;
+	}
+	.header section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.header {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	#header {
+		width: 150%;
+	}
+	.header-text {
+		margin-top: 3rem;
+		width: 130%;
+	}
+
 	section > h2 {
 		margin-bottom: 2rem;
+	}
+	.btn-primary.btn {
+		display: flex;
+		justify-content: center;
+
+		flex-wrap: wrap; /* Allow the content to wrap when needed */
+		align-items: center;
+		flex-direction: column;
+	}
+	#me {
+		width: 100%;
+		height: auto;
+		border-radius: 100%;
 	}
 }
