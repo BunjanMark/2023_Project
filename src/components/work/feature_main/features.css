@@ -4,4 +4,24 @@
 	object-fit: cover;
 	width: 100%;
 	height: auto;
+	border-radius: 4px;
+}
+
+/* responsive ==style */
+.feature-main {
+	display: flex;
+	gap: 24px;
+}
+
+.feature-main-row1 {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+#image-header {
+	background-color: rgba(255, 0, 0, 0.178);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 50%;
 }

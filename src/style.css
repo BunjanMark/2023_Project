@@ -182,4 +182,9 @@ img {
 		height: auto;
 		border-radius: 100%;
 	}
+
+	/* Feature section  */
+	.feature-main {
+		flex-direction: column;
+	}
 }
