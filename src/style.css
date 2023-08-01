@@ -49,6 +49,12 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-items: center;
+}
+.justify-content {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 a {
 	color: var(--color-light-gray);
@@ -76,6 +82,14 @@ h1 {
 }
 section {
 	margin-top: 4.6rem;
+}
+.section-header {
+	text-align: center;
+	width: 100%;
+
+	height: auto;
+	margin-bottom: 2.3rem;
+	color: var(--color-light-gray);
 }
 
 .text-gray {
@@ -185,6 +199,17 @@ img {
 
 	/* Feature section  */
 	.feature-main {
+		flex-direction: column;
+	}
+
+	/* visual section */
+	.visuals {
+		width: 90%;
+	}
+	.feature-main-row1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-direction: column;
 	}
 }

@@ -1,0 +1,11 @@
+#hr {
+	background-color: rgb(255, 255, 255);
+	height: 1px;
+	width: 100%;
+	color: antiquewhite;
+	content: "";
+}
+
+#footer-container {
+	display: flex;
+}

@@ -19,9 +19,13 @@
 	gap: 24px;
 }
 #image-header {
-	background-color: rgba(255, 0, 0, 0.178);
+	background-color: rgba(0, 0, 0, 0.438);
 	position: relative;
 	display: flex;
 	justify-content: center;
 	top: 50%;
+}
+#inversion:hover {
+	opacity: 0.1;
+	filter: invert(-100%);
 }

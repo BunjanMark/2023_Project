@@ -6,6 +6,7 @@ const Work = () => {
 			<section id="featured">
 				<div className="container">
 					<div class="scrolldown">
+						<br />
 						<div class="chevrons">
 							<div class="chevrondown"></div>
 							<div class="chevrondown"></div>

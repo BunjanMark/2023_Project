@@ -1,0 +1,12 @@
+.section-header h2 {
+	font-weight: 400;
+}
+
+.visuals {
+	width: 230px;
+}
+
+.justify-content {
+	align-items: center;
+	justify-content: center;
+}

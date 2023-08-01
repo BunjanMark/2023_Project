@@ -7,7 +7,7 @@ const Contact = () => {
 			{/* No choice media query ta */}
 			<div className="btn-primary btn">
 				<CiMail className="mail-icon" />
-				<p>bunjan.mark476@gmail.com</p>
+				<p>Email me</p>
 			</div>
 		</div>
 	);

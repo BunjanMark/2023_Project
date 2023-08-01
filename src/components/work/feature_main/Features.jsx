@@ -17,6 +17,7 @@ const Features = () => {
 							src={Coding}
 							alt=""
 							className="img-div-1"
+							id="inversion"
 						/>
 					</div>
 					<img
