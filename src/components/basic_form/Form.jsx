@@ -3,47 +3,59 @@ import "./form.css";
 import { useState } from "react";
 
 const Form = () => {
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
+	const [data, setData] = useState({
+		first_name: " ",
+		last_name: " ",
+		email: " ",
+		password: " ",
 	});
 
-	// Define the form submission handler function
-	const formSubmissionHandler = (event) => {
-		event.preventDefault();
-		console.log(formData);
+	const handleChange = (e) => {
+		setData({ ...data, [e.target.name]: e.target.value });
+		console.log(data);
 	};
 	return (
 		<div className="container justify-content">
 			<br />
 			<br />
 			<br />
-			<form action="/action_page.php">
-				<label>Full Name</label>
+			<div>
+				<label htmlFor="">Firstname</label>
 				<input
 					type="text"
-					id="name"
-					name="name"
-					placeholder="Enter your name.."
+					name="first_name"
+					//
+					onChange={handleChange}
+					// Target first_name and whatever changes in input, it's value is stored in current state in useState
+					value={data.first_name}
 				/>
-				<br />
-				<label>Email</label>
+				<label htmlFor="">Lastname</label>
+				<input
+					type="text"
+					name="last_name"
+					onChange={handleChange}
+					value={data.last_name}
+				/>
+				<label htmlFor="">Email</label>
 				<input
 					type="email"
-					id="email"
 					name="email"
-					placeholder="Enter your email"
+					onChange={handleChange}
+					value={data.last_name}
 				/>
-				<br />
-				<label>Subject</label>
-				<textarea
-					id="subject"
-					name="subject"
-					placeholder="Enter your message.."
-				></textarea>
-				<input type="submit" value="Submit" />
-			</form>
+				<label htmlFor="">Password</label>
+				<input
+					type="password"
+					name="password"
+					onChange={handleChange}
+					value={data.last_name}
+				/>
+				<input
+					type="submit"
+					name="submit"
+					value="Register"
+				/>
+			</div>
 		</div>
 	);
 };

@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import MessageMe from "./pages/MessageMe/MessageMe";
 import Register from "./pages/Register/Register";
+import Work from "./pages/Work/Work";
 // allows dynamic pages using react router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
@@ -18,8 +19,9 @@ const App = () => {
 					path="/message"
 					element={<MessageMe />}
 				></Route>
+				<Route path="/work" element={<Work />}></Route>
 				<Route
-					path="/register"
+					path="/contact"
 					element={<Register />}
 				></Route>
 			</Routes>

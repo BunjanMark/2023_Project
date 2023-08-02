@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import GrfacebookOption from "react-icons/gr";
 
 import { LiaFacebookF } from "react-icons/lia";
 

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/logo.png";
-
+import { Link } from "react-router-dom";
 import "./navbar.css";
+import Home from "../../pages/Home/Home";
 const Navbar = () => {
 	const [clicked, setClick] = useState(false);
 	const handleClick = () => {
@@ -28,13 +29,15 @@ const Navbar = () => {
 					}
 				>
 					<li>
-						<a href="index.html">home</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a href="index.html">work</a>
+						<Link to="/work">Work</Link>
 					</li>
 					<li>
-						<a href="index.html">contact</a>
+						<Link to="/contact">
+							Contact
+						</Link>
 					</li>
 				</ul>
 				<ul
