@@ -9,20 +9,20 @@ import ScrollToTop from "../../components/scroll_on_top/ScrollToTop";
 import Footer_contact from "../../components/contact/Footer_contact";
 import Footer from "../../components/footer/Footer";
 const Home = () => {
-	return (
-		<div>
-			<Navbar />
-			<Header />
-			<Work />
-			<Features />
-			<Visuals />
-			<Personal />
-			<ScrollToTop />
+  return (
+    <div>
+      <Navbar />
+      <Header />
+      <Work />
+      <Features />
+      <Visuals />
+      <Personal />
+      <ScrollToTop />
 
-			<Footer_contact />
-			<Footer />
-		</div>
-	);
+      <Footer_contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

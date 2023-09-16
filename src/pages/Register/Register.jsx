@@ -4,14 +4,15 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Form from "../../components/basic_form/Form";
 const Register = () => {
-	return (
-		<div>
-			<Navbar />
-			<Form />
+  return (
+    <div>
+      <Navbar />
 
-			<Footer />
-		</div>
-	);
+      <Form />
+
+      <Footer />
+    </div>
+  );
 };
 
 export default Register;
